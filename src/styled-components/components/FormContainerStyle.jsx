@@ -6,8 +6,8 @@ export const FormContainerStyle = styled.form`
     flex-direction: column;
     justify-content: center;
     max-block-size: 390px;
-    gap: 1.2rem;
-    inline-size: clamp(400px,50%,600px);
+    gap: 1.1rem;
+    inline-size: clamp(350px,50%,550px);
     margin: 0 auto;
     border-radius: 5px;
     padding: 23px;

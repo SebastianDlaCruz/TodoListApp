@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { LabelContainerStyle } from '../styled-components';
 
-const LabelContainer = ({ type, htmlFor, textLabel }) => {
+const LabelContainer = ({ type, htmlFor, textLabel, handleEvent }) => {
 
     const [transition, setTransition] = useState(false);
 
@@ -30,7 +30,8 @@ const LabelContainer = ({ type, htmlFor, textLabel }) => {
                 onFocus={handleTransition}
                 onBlur={handleNotTransition}
                 required
-
+                name={htmlFor}
+                onChange={handleEvent}
             />
         </>
     );
